@@ -15,7 +15,6 @@ class CreateGenresTable extends Migration
     {
         Schema::create('genres', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_film')->references('id')->on('films')->onDelete('restrict')->unique();
             $table->string('nama_genre');
             $table->timestamps();
         });
