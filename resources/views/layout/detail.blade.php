@@ -7,46 +7,12 @@
     <title>Detail Film</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <style type="text/css">
-        body {
-            font-size: 14px;
-            background-color:#fff ;
-           
-           
-           font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-        }
-        .header{
-           
-         margin-left: -8px;
-        }
-        .gambar{
-            margin-left: 180px;
-            margin-top: -40px;
-            border-radius: 8%
-        }
-        .konten{
-            margin-left: 450px;
-            margin-top: -260px;
-            margin-right:150px;
-        }
-        .drama{
-            padding-left: 20px;
-            
-        }
-        .romance{
-            padding-left: 3px;
-        }
-        .tombol{
-            border-radius: 25px;
-            padding:10px;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="css/detail.css">
 </head>
 <body>
     
-        <img src="gambar1.jpg" alt="" width="1366px" height="180px" class="header">
-        <img src="gambar2.jpg" alt=""  width="210px" class="gambar">
+        <img src="img/kupilih_cinta1.jpg" alt="" class="header">
+        <img src="img/kupilih_cinta2.jpg" alt="" class="gambar">
 
         <div class="konten">
             <h2>Kupilih Cinta</h2>
