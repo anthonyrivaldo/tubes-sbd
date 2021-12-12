@@ -1,0 +1,36 @@
+
+body {
+    font-size: 14px;
+    background-color:#fff ;
+    
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.header{
+    
+    margin-left: -8px;
+    width: 1366px;
+    height: 180px;
+}
+.gambar{
+    margin-left: 180px;
+    margin-top: -40px;
+    border-radius: 8%;
+    width: 210px;
+}
+.konten{
+    margin-left: 450px;
+    margin-top: -260px;
+    margin-right:150px;
+}
+.drama{
+    padding-left: 20px;
+    
+}
+.romance{
+    padding-left: 3px;
+}
+.tombol{
+    border-radius: 25px;
+    padding:10px;
+}
