@@ -1,3 +1,5 @@
+@include('php/koneksi')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
