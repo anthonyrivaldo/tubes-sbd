@@ -1,0 +1,133 @@
+nav {
+    list-style-type: none;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 50px;
+}
+
+.btn {
+    font-family: sans-serif;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 3px;
+}
+
+.film::-webkit-scrollbar {
+    display: none;
+}
+
+.film {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.btn-danger {
+    margin-right: 10px;
+    background-color: red;
+}
+
+.btn-light {
+    background-color: white;
+    color: black;
+    border: rgb(146, 146, 146) 1px solid;
+}
+
+.box {
+    margin-right: 20px;
+}
+
+.container-1 .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 8px;
+    margin-top: 4px;
+    border: none;
+    z-index: 1;
+    color: black;
+    background-color: transparent;
+}
+
+.container-1 {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+.container-1 input#search:hover,
+.container-1 input#search:focus,
+.container-1 input#search:active {
+    outline: none;
+    background: #ffffff;
+}
+.container-1 input#search {
+    width: 300px;
+    height: 35px;
+    background: rgba(240, 240, 240, 0.918);
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.container-1 input#search:hover {
+    background: rgba(240, 240, 240, 0.918);
+}
+
+.container-1 input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.container-1 input#search:-moz-placeholder {
+    /* Firefox 18- */
+    color: #65737e;
+}
+
+.container-1 input#search::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #65737e;
+}
+
+.container-1 input#search:-ms-input-placeholder {
+    color: #65737e;
+}       
+
+
+.home-carousel{
+    max-height: 35rem !important;
+    position: center;
+}
+
+.home-carousel::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0));
+}
+
+.btn-search{
+    margin-left: -3em;
+}
