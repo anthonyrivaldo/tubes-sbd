@@ -39,14 +39,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Premier</a>
+                            <a class="nav-link active" aria-current="page" href="#"><b>Premier</b></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">For You</a>
+                            <a class="nav-link active" aria-current="page" href="#"><b>For You</b></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                aria-expanded="false">More</a>
+                                aria-expanded="false"><b>More</b></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Romance</a></li>
                                 <li><a class="dropdown-item" href="#">Comedy</a></li>

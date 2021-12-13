@@ -4,6 +4,7 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 1;
+    height: 50px;
 }
 
 .btn {
@@ -113,8 +114,8 @@ nav {
 
 
 .home-carousel{
-    max-height: 30rem !important;
-    position: relative;
+    max-height: 35rem !important;
+    position: center;
 }
 
 .home-carousel::after{
