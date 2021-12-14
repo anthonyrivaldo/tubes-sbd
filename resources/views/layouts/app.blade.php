@@ -66,7 +66,7 @@
                 </div>
             </div>
             <button type="button" class="btn btn-danger"><b>Langganan</b></button>
-            <button type="button" class="btn btn-light"><b>Masuk</b></button>
+            <button type="button" class="btn btn-light" onclick="document.location='/login'"><b>Masuk</b></button>
         </nav>
         {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">

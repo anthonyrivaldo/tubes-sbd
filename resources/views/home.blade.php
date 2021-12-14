@@ -13,28 +13,28 @@
         </div>
         <div class="carousel-inner bg-danger home-carousel">
             <div class="carousel-item active">
-                <img src="img/iloveyoubaby.jpg" class="d-block w-100" alt="...">
+                <img src="{{asset('img/iloveyoubaby.jpg')}}" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/jinggadansenja.jpg" class="d-block w-100" alt="...">
+                <img src="{{asset('img/jinggadansenja.jpg')}}" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/mylove.jpg" class="d-block w-100" alt="...">
+                <img src="{{asset('img/mylove.jpg')}}" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/cintaamara.jpg" class="d-block w-100" alt="...">
+                <img src="{{asset('img/cintaamara.jpg')}}" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
@@ -57,7 +57,7 @@
             <?php for ($i = 0; $i < 15; $i++) { ?>
             <div class="col-2">
                 <div class="card">
-                    <img src="img/film1.jpeg" class="card-img-top" alt="...">
+                    <img src="{{asset('img/film1.jpeg')}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>

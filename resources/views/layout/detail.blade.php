@@ -9,12 +9,12 @@
     <title>Detail Film</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="{{ asset('css/detail.css') }}">
 </head>
 <body>
     
-        <img src="img/kupilih_cinta1.jpg" alt="" class="header">
-        <img src="img/kupilih_cinta2.jpg" alt="" class="gambar">
+        <img src="{{ asset('img/kupilih_cinta1.jpg') }}" alt="" class="header">
+        <img src="{{ asset('img/kupilih_cinta2.jpg') }}" alt="" class="gambar">
 
         <div class="konten">
             <h2>Kupilih Cinta</h2>
