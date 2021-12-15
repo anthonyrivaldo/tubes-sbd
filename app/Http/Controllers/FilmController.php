@@ -18,6 +18,7 @@ class FilmController extends Controller
         return view('home',['films'=>$film]);
     }
 
+    // Fungsi untuk mengambil data film untuk ditampilkan di halaman detail film
     function detail()
     {
         $film = DB::table('films')

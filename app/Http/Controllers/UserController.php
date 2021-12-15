@@ -5,19 +5,23 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
+// User::where('email', $req['email'])->first();
 {
-    //
+    // Fungsi Login
     function login(Request $req) {
-        $user = User::where('email', $req['email'])->first();
+        $user = DB::table('users')
+                    ->where('email', '=', $req['email'])->first()
+                    ->get();
 
         if (!$user) {
             return redirect()->back();
         }
         else {
             if (Hash::check($req['password'], $user->password)) {
-                $req->session()->put('user', $user['email']);
+                $req->session()->put('user', $user->email);
                 // echo session('user');
                 return redirect('home');
             }
@@ -27,6 +31,7 @@ class UserController extends Controller
         }
     }
 
+    // Fungsi Register
     function addData(Request $req) {
         $req->validate([
             'email' => 'unique:users',

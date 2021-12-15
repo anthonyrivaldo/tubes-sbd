@@ -46,7 +46,7 @@
 					@csrf
 					<span class="login100-form-title p-b-26">
 						<img src="{{asset('assets/register/images/img/Logo_Vidio.png')}}" width="195" height="120">
-						Register
+						Pendaftaran
 					</span>
 					<span class="login100-form-title p-b-48">
 						<i class="zmdi zmdi-font"></i>
@@ -114,18 +114,18 @@
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
 							<button class="login100-form-btn">
-								Register
+								Daftar
 							</button>
 						</div>
 					</div>
 
 					<div class="text-center p-t-115">
 						<span class="txt1">
-							have an account?
+							Punya akun? Login
 						</span>
 
 						<a class="txt2" href="/login">
-							Sign in
+							Disini
 						</a>
 					</div>
 				</form>
