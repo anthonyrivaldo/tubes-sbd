@@ -1,7 +1,13 @@
-<span class="login100-form-title p-b-26">
-						<img src="{{asset('assets/login/images/img/Logo_Vidio.png')}}"  width="195" height="120">
-<img src="https://static-web-prod-vidio.akamaized.net/assets/banners/premier-banner-desktop-19082021-2e57d2ad7dfe84358024c3c2fb9071e4db4355bc5a2ba63b23873f8b54768d1e.jpg"  width="1300" height="450" >
-<img src="{{asset('assets/login/images/img/mengapa.png')}}"   >
+<center>
+    <img src="{{asset('assets/login/images/img/Logo_Vidio.png')}}"  width="195" height="120" >
+</center>
+<br>
+<center> 
+    <img src="https://static-web-prod-vidio.akamaized.net/assets/banners/premier-banner-desktop-19082021-2e57d2ad7dfe84358024c3c2fb9071e4db4355bc5a2ba63b23873f8b54768d1e.jpg"  width="1250" height="450" >
+</center>
+<center>
+    <img src="{{asset('images/img/mengapa.png')}}"   >
+</center>
 <h2 id="title">Pilih paket yang sesuai untuk Kamu </h2> 
 <link rel="stylesheet" href="css/sub.css">
 <div class="hover-table-layout">
@@ -59,8 +65,7 @@
             <h4>Tayangan Olahraga, seperti: UCL,NBA, BRI Liga 1, Liga 2, Bein (1 & 2), BWF, WTA, Sudirman Cup dll</h4>
             <h4>Serial dan Film, seperti: Vidio Original Series, Korea, Indonesia, dll</h4>
             <h4>TV International, seperti: TVN, Zoo Moo,Zee Bioskop, dll</h4>
-            
-            <img src="{{asset('assets/login/images/img/mengapa.png')}}"   >
         </div>
     </div>
+    <img src="{{asset('images/img/mobile.png')}}"   >
 </div>
