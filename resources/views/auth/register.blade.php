@@ -1,100 +1,156 @@
 @extends('layouts.app')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center mt-5">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+<!DOCTYPE html>
+<html lang="en">
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
+<head>
+	<title>Register</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{{asset('assets/register/images/icons/vidio.ico')}}" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="image/png" href="{{asset('assets/register/images/img/Logo_Vidio.png')}}" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('vendor/animate/animate.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('vendor/css-hamburgers/hamburgers.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('vendor/animsition/css/animsition.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('vendor/select2/select2.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('vendor/daterangepicker/daterangepicker.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('css/util.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}">
+	<!--===============================================================================================-->
+	<style>
+.radio-control-input:checked~.-control-label.red::before {
+  background-color: red;
+}
 
-                        <div class="row mb-3">
-                            <label for="nama" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+	</style>
+</head>
 
-                            <div class="col-md-6">
-                                <input id="nama" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+<body>
 
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 mt-5">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-26">
+						<img src="{{asset('assets/register/images/img/Logo_Vidio.png')}}" width="195" height="120">
+						Register
+					</span>
+					<span class="login100-form-title p-b-48">
+						<i class="zmdi zmdi-font"></i>
+					</span>
 
-                        <div class="row mb-3">
-                            <label for="tgl_lahir" class="col-md-4 col-form-label text-md-right">{{ __('Date of Birth') }}</label>
 
-                            <div class="col-md-6">
-                                <input type="date" id="tgl_lahir" name="tgl_lahir" class="form-control" required />
-                            </div>
-                        </div>
+					<div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c">
+						<input class="input100" type="text" name="email">
+						<span class="focus-input100" data-placeholder="Email"></span>
+					</div>
 
-                        <div class="row mb-3">
-                            <label for="gender" class="col-md-4 col-form-label text-md-right">{{ __('Gender') }}</label>
+					<div class="wrap-input100 validate-input" data-validate="Nama User">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input class="input100" type="text" name="name">
+						<span class="focus-input100" data-placeholder="Nama User"></span>
+					</div>
 
-                            <div class="col-md-6">
-                                <div class="col-md-6">
-                                    <input type="radio" id="gender1" name="gender" value="M" checked />
-                                    <label for="gender1">Male</label>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="radio" id="gender2" name="gender" value="F" />
-                                    <label for="gender2">Female</label>
-                                </div>
-                            </div>
-                        </div>
+					<div class="wrap-input100 validate-input" data-validate="Tahun Lahir">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input class="input100" type="date" name="dob">
+					</div>
 
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+					<div>
+					<div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+						checked>
+						<label class="form-check-label" for="flexRadioDefault1">
+							Laki-laki
+							<label class="radio-control-label red" for="flexRadioDefault1"></label>
+						</label>
+					</div>
+					<div class="form-check">
+						
+						<input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+						<label class="form-check-label" for="flexRadioDefault2">
+							Perempuan
+							<label class="custom-control-label red" for="flexRadioDefault2>"> </label>
+						</label></div>
+					</div>
+					</div>
+					
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-                                <input name="id_paket" type="hidden" value=1>
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+					<div class="wrap-input100 validate-input" data-validate="Masukkan Password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input class="input100" type="password" name="password">
+						<span class="focus-input100" data-placeholder="Password"></span>
+					</div>
 
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+					<div class="wrap-input100 validate-input" data-validate="Konfirmasi Password">
+						<input class="input100" type="text" name="confirm password">
+						<span class="focus-input100" data-placeholder="Konfirmasi Password"></span>
+					</div>
 
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
 
-                        <div class="row mb-3">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">
+								Register
+							</button>
+						</div>
+					</div>
 
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
+					<div class="text-center p-t-115">
+						<span class="txt1">
+							have an account?
+						</span>
 
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary submit">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
+						<a class="txt2" href="/login">
+							Sign in
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+	<!--===============================================================================================-->
+	<script src="{{asset('vendor/jquery/jquery-3.2.1.min.js')}}"></script>
+	<!--===============================================================================================-->
+	<script src="{{asset('vendor/animsition/js/animsition.min.js')}}"></script>
+	<!--===============================================================================================-->
+	<script src="{{asset('vendor/bootstrap/js/popper.js')}}"></script>
+	<script src="{{asset('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+	<!--===============================================================================================-->
+	<script src="{{asset('vendor/select2/select2.min.js')}}"></script>
+	<!--===============================================================================================-->
+	<script src="{{asset('vendor/daterangepicker/moment.min.js')}}"></script>
+	<script src="{{asset('vendor/daterangepicker/daterangepicker.js')}}"></script>
+	<!--===============================================================================================-->
+	<script src="{{asset('vendor/countdowntime/countdowntime.js')}}"></script>
+	<!--===============================================================================================-->
+	<script src="{{asset('js/main.js')}}"></script>
+
+</body>
+
+</html>
