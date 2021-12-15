@@ -16,8 +16,8 @@ class CreatePemainsTable extends Migration
         Schema::create('pemains', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('keterangan');
-            $table->string('koleksi');
+            $table->text('keterangan');
+            $table->string('koleksi')->nullable();
             $table->timestamps();
         });
     }

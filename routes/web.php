@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\FilmController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,16 +15,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
 
 
 // Route::get('/register', function () {
 //     return view('auth.register');
 // });
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\FilmController::class, 'list'])->name('home');
+Route::get('/detail/{id}', [App\Http\Controllers\FilmController::class, 'detail']);
+
+Route::post('login', [App\Http\Controllers\UserController::class, 'login']);
+Route::get('/login', function() {
+    if(session()->has('user')) {
+        return redirect('/');
+    }
+    else {
+        return view('auth.login');
+    }
+});
+
+Route::view('register', '/auth/register');
+Route::post('register', [App\Http\Controllers\UserController::class, 'addData']);
+
+Route::get('/profile', function() {
+    return view('profile');
+});
+
+
 

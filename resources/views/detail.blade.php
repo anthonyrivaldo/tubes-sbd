@@ -1,4 +1,4 @@
-@include('php/koneksi')
+@extends('layouts.app')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,7 @@
 </head>
 <body>
     
-        <img src="{{ asset('img/kupilih_cinta1.jpg') }}" alt="" class="header">
+        <img src="{{ $films->url2 }}" alt="" class="header">
         <img src="{{ asset('img/kupilih_cinta2.jpg') }}" alt="" class="gambar">
 
         <div class="konten">

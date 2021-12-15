@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('content')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +38,8 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 mt-5">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" action="login" method="POST">
+					@csrf
 					<span class="login100-form-title p-b-26">
 						<img src="{{asset('assets/login/images/img/Logo_Vidio.png')}}"  width="195" height="120">
 						Login
@@ -103,3 +106,5 @@
 
 </body>
 </html>
+
+@endsection

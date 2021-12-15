@@ -1,0 +1,118 @@
+.image img{
+    width: 1500px;
+    height: 300px;
+}
+/*Profile Image*/
+section#box-profile{
+    position: fixed;
+    bottom: 10;
+    width: 100%;
+    min-height: 180px;
+    margin-left: 0%;
+    margin-right: auto;
+    margin-top: auto;
+    border-radius: 6px;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 0 0 5px 5px rgba(136, 136, 136, 0.2);
+}
+#box-profile .img-profile{
+    position: relative;
+    display: inline-block;
+    width:150px;
+    height: 150px;
+    border-radius: 300px;
+    float: left;
+    top: 25px;
+    margin-left: 40px;    
+}
+.img-profile .photo{
+    height: 100%;
+    background-size: 100%;
+    margin-top: -50px;
+    background-repeat: no-repeat;
+    background-position: 0px - 20px;
+    border-radius: 300px;
+}
+.description{
+    position: relative;
+    width: 400px;
+    display:inline-block;
+    float: left;
+    top: 50px;
+    margin-left: 30px;
+    border-right: 1px solid #efefef;
+}
+.description h2{
+    font-size: 30px;
+    margin-top: -30px;
+}
+.description p{
+    color: #888;
+}
+.text-gray {
+    color: #888;
+}
+.information {
+    position: relative;
+    display: inline-block;
+    float: left;
+    font-family: Arial;
+    top: 45px;
+    margin-left: 30px;
+}
+.information .data {
+    display: block;
+    width: 100%;
+    height: 36px;
+}
+.information p.field{
+    font-weight: 600;
+    width: 150px;
+    color: #333;
+}
+.information .data p{
+    float: left;
+}
+/*Menu*/
+.menu {
+    font-family: Arial;
+    color: black;
+    height: 70px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.menu ul{
+    position: relative;
+    padding: 5px;
+    background: none;
+    display: block;
+   float: left;
+   margin-left: -460px;
+   margin-top: 130px;
+}
+.menu ul li {
+    color: black;
+    list-style: none;
+    display: inline-block;
+}
+.menu ul li .dropdown {
+    display: none;
+}
+.menu ul li a:hover {
+    display: block;
+    color: red;
+    background: none;
+}
+.menu ul li a {
+    display: block;
+    font-family: Arial;
+    text-decoration: none;
+    color: black;
+}
+/*Kelola dan Ubah Profil*/
+.setting {
+    color: black;
+    font-style: bold;
+    margin-left: 85%;
+}

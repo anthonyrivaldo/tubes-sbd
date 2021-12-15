@@ -42,7 +42,8 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 mt-5">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" action="register" method="POST">
+					@csrf
 					<span class="login100-form-title p-b-26">
 						<img src="{{asset('assets/register/images/img/Logo_Vidio.png')}}" width="195" height="120">
 						Register
@@ -61,7 +62,7 @@
 						<span class="btn-show-pass">
 							<i class="zmdi zmdi-eye"></i>
 						</span>
-						<input class="input100" type="text" name="name">
+						<input class="input100" type="text" name="nama">
 						<span class="focus-input100" data-placeholder="Nama User"></span>
 					</div>
 
@@ -69,14 +70,14 @@
 						<span class="btn-show-pass">
 							<i class="zmdi zmdi-eye"></i>
 						</span>
-						<input class="input100" type="date" name="dob">
+						<input class="input100" type="date" name="tgl_lahir">
 					</div>
 
 					<div>
 					<div>
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
-						checked>
+						<input class="form-check-input" type="radio" name="gender" id="flexRadioDefault1"
+						value="M" checked>
 						<label class="form-check-label" for="flexRadioDefault1">
 							Laki-laki
 							<label class="radio-control-label red" for="flexRadioDefault1"></label>
@@ -84,7 +85,8 @@
 					</div>
 					<div class="form-check">
 						
-						<input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+						<input class="form-check-input " type="radio" name="gender" id="flexRadioDefault2"
+						value="F">
 						<label class="form-check-label" for="flexRadioDefault2">
 							Perempuan
 							<label class="custom-control-label red" for="flexRadioDefault2>"> </label>
@@ -103,7 +105,7 @@
 
 
 					<div class="wrap-input100 validate-input" data-validate="Konfirmasi Password">
-						<input class="input100" type="text" name="confirm password">
+						<input class="input100" type="password" name="confirm password">
 						<span class="focus-input100" data-placeholder="Konfirmasi Password"></span>
 					</div>
 
